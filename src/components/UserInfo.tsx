@@ -3,7 +3,8 @@ import image from '/assets/userImage.jpg';
 type socialType = {
     icon: string,
     id: number,
-    color: string
+    color: string,
+    url: string
 }
 type userType = {
     id: number,
@@ -27,6 +28,7 @@ const UserInfo = () => {
                         socialMedia.map((item, index) => (
 
                             <button
+                                onClick={() => window.open(item.url)}
                                 key={index}
                                 className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md py-4 px-4 bg-[#F2F5F9] font-medium text-neutral-200 transition hover:scale-110">
                                 <Icon icon={item.icon} width="24" height="24" className={item.color} />
@@ -74,27 +76,19 @@ const UserInfo = () => {
 }
 
 const socialMedia: socialType[] = [
-    {
-        id: 1,
-        icon: 'ri:facebook-fill',
-        color: 'text-blue-700',
 
-    },
     {
         id: 2,
         icon: 'ri:linkedin-fill',
-        color: 'text-blue-300'
+        color: 'text-blue-300',
+        url: 'https://www.linkedin.com/in/frontdev01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     }
     ,
     {
-        id: 3,
-        icon: 'ri:twitter-x-fill',
-        color: 'text-black'
-    },
-    {
         id: 4,
         icon: 'ri:github-fill',
-        color: 'text-black'
+        color: 'text-black',
+        url: 'https://github.com/Makfront0123'
     }
 ]
 
