@@ -28,8 +28,8 @@ const ContentResume = ({
     option,
 }: ContentProps) => {
     return (
-        <div className="grid grid-rows-2 mt-20">
-            <div className="flex flex-col items-start">
+        <div className="grid grid-rows-12 mt-20">
+            <div className="flex flex-col row-span-6 items-start">
                 <div className="flex items-center gap-3 md:mb-8 mb-10">
                     <h2 className="text-2xl font-bold">{option}</h2>
                 </div>
@@ -38,7 +38,7 @@ const ContentResume = ({
                         {array02.map((item) => (
                             <div
                                 key={item.id}
-                                className="flex flex-col min-w-[55vh] h-[20vh] p-6 bg-gray-100 drop-shadow rounded-[10px]"
+                                className="flex flex-col md:min-w-[55vh] min-w-[35vh] h-[20vh] p-6 bg-gray-100 drop-shadow rounded-[10px]"
                             >
                                 {item.date && <span className="text-gray-500">{item.date}</span>}
                                 <strong className="mb-3">{item.title}</strong>
@@ -48,7 +48,7 @@ const ContentResume = ({
                     </div>
                 )}
             </div>
-            <div className="md:-mt-14 mt-0">
+            <div className="md:-mt-14 mt-0 row-span-6">
                 <span className="text-2xl font-bold">{title}</span>
                 <div className="flex flex-wrap gap-4 mt-20">
                     {arr.map((item) => (

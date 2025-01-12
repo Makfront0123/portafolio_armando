@@ -4,21 +4,33 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode:'class',
   theme: {
     extend: {},
     fontFamily: {
       'pacifico': ['Pacifico', 'sans-serif'],
       'poppins': ["Poppins", 'sans-serif'],
-      'futura':['Futura Std', 'sans-serif'],
-      'georgia':['Georgia', 'sans-serif']
+      'futura': ['Futura Std', 'sans-serif'],
+      'georgia': ['Georgia', 'sans-serif']
     },
     animation: {
       'fade-top': 'fadeTop 800ms ease-in-out',
       'fade-in': 'slideInLeft 700ms ease-in-out',
+      'fade-img': 'fadeimg 700ms ease-in-out',
       'slide-in-right': 'slideInRight 1s ease-in-out',
       'slide-in-left': 'slideInLeft 1s ease-in-out'
     },
     keyframes: {
+      fadeimg: {
+        '0%': {
+          transform: 'translateX(30%)',
+
+        },
+        '100%': {
+          transform: 'translateX(0)',
+
+        }
+      },
       slideInRight: {
         '0%': {
           transform: 'translateX(30%)',

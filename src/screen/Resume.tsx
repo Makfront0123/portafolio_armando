@@ -3,7 +3,7 @@ import ContentResume from "../components/ContentResume"
 
 const Resume = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden flex p-10  flex-col md:items-start items-center justify-center">
       <h4 className="text-3xl font-semibold flex text-black items-center ">
         RESUME
         <div className="ml-10 sm:min-w-[50vh] py-[1.3px] bg-blue-400">

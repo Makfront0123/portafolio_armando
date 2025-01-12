@@ -19,11 +19,13 @@ const Layout = () => {
 
 
             <Outlet />
+
+
         </>
     )
 };
 
-const navLinks = [
+export const navLinks = [
     {
         id: 1,
         title: 'Home',

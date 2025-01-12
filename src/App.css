@@ -1,0 +1,12 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dark body {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+  }
