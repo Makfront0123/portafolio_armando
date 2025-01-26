@@ -17,7 +17,7 @@ type userType = {
 const UserInfo = () => {
     return (
         <div className="animate-fade-in  bg-[#DCF2F1] lg:min-h-[80vh] md:min-h-[160vh] sm:min-h-[150vh] min-h-[130vh]  flex flex-col items-start relative justify-center rounded-lg  min-w-[50vh]">
-            <div className="absolute sm:p-5 p-20 mt-2 flex flex-col items-center justify-center -top-24 left-0 right-0">
+            <div className="absolute sm:p-5 p-10 mt-2 flex flex-col items-center justify-center -top-24 left-0 right-0">
                 <img src={image} className="object-fill drop-shadow-md px-10 py-5 rounded-[100px] " alt="" />
                 <div className="flex flex-col items-center">
                     <h2 className="text-2xl font-bold text-black mb-2">Armando Sanchez</h2>

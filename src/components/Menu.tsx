@@ -3,7 +3,7 @@ import { navLinks } from "./Layout";
 import { Icon } from '@iconify/react'
 
 const Menu = ({ showMenu, toggleMenu }: { showMenu: boolean; toggleMenu: () => void }) => (
-    <div className={`fixed inset-0 bg-black bg-opacity-50 z-20 md:hidden transition-transform duration-300 transform ${showMenu ? 'translate-x-0' : '-translate-x-full'}`} onClick={toggleMenu}>
+    <div className={`fixed inset-0 bg-black bg-opacity-50 z-20  transition-transform duration-300 transform ${showMenu ? 'translate-x-0' : '-translate-x-full'}`} onClick={toggleMenu}>
         <div className="w-64 p-3 bg-sky-200 dark:bg-gray-800 text-black dark:text-white h-full">
             {navLinks.map((item) => (
                 <Link to={item.link} key={item.id} onClick={() => { toggleMenu(); document.getElementById('action')?.scrollIntoView({ behavior: 'smooth' }); }}>
